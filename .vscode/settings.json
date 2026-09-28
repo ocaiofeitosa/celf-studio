@@ -1,0 +1,9 @@
+{
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "same",
+  "editor.wrappingStrategy": "advanced",
+  "editor.scrollBeyondLastLine": false,
+  "editor.trimAutoWhitespace": true,
+  "files.insertFinalNewline": true
+}
