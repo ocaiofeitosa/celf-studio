@@ -1,13 +1,13 @@
 export default function Hero() {
   return (
     <main className="w-full bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_bottom,transparent_35%,rgba(0,0,0,0.75)_100%),url('/banner-hero-mobile.jpg')] lg:bg-[linear-gradient(to_bottom,transparent_35%,rgba(0,0,0,0.75)_100%),url('/hero-bg.jpg')]">
-      <section className="flex min-h-svh flex-col justify-center gap-16 px-5 py-10 md:gap-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col justify-between gap-5 lg:flex-row lg:items-center">
-          <div className="max-w-xl">
+      <section className="flex min-h-svh flex-col justify-center gap-16 py-10 md:gap-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col justify-between gap-5 px-5 lg:flex-row lg:items-center">
+          <div className="max-w-xl grid gap-4">
             <span className="text-sm text-white md:text-base">
-              Engenharia de Software
+              We design and build digital experiences.
             </span>
-            <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl md:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
               Desenvolvimento <br />
               de Software
             </h1>
@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mx-auto grid w-full max-w-7xl grid-cols-2 gap-6 text-white md:flex md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto grid w-full max-w-7xl gap-6 px-5 text-white md:flex md:flex-row md:items-center md:justify-between">
           {[
             'Design de Produtos',
             'Design de Interfaces',
