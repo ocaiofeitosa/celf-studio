@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <main className="w-full bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_bottom,transparent_35%,rgba(0,0,0,0.75)_100%),url('/banner-hero-mobile.jpg')] lg:bg-[linear-gradient(to_bottom,transparent_35%,rgba(0,0,0,0.75)_100%),url('/hero-bg.jpg')]">
-      <section className="flex min-h-svh flex-col justify-center gap-16 py-10 md:gap-24">
+      <section className="flex min-h-svh flex-col justify-center gap-16 py-30 md:gap-24">
         <div className="mx-auto flex w-full max-w-7xl flex-col justify-between gap-5 px-5 lg:flex-row lg:items-center">
           <div className="max-w-xl grid gap-4">
             <span className="text-sm text-white md:text-base">

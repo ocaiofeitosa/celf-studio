@@ -12,12 +12,12 @@ export default function BehindDesign() {
         <span className="text-primary font-medium text-base">
           Por trás do design
         </span>
-        <h3 className="text-4xl text-white leading-tight md:text-5xl font-bold">
+        <h3 className="text-3xl text-white leading-tight md:text-4xl lg:text-5xl font-bold">
           Criando experiências que simplificam a vida
         </h3>
       </div>
       <div className="grid gap-5 md:gap-10">
-        <h3 className="text-xl md:text-2xl lg:text-3xl text-white font-medium leading-8 md:leading-10">
+        <h3 className="text-base md:text-2xl lg:text-3xl text-white font-medium leading-7 md:leading-10">
           Desenvolvemos produtos focados em interfaces limpas e intuitivas que
           resolvem problemas do mundo real.
         </h3>
@@ -37,7 +37,13 @@ export default function BehindDesign() {
                 alt="Projetos Celf Studio"
                 height={300}
                 width={1000}
-                className="rounded-4xl w-full grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110 overflow-hidden"
+                className="w-full rounded-4xl
+                            grayscale
+                            transition-all
+                            duration-500
+                            [@media(hover:hover)]:hover:grayscale-0
+                            [@media(hover:hover)]:hover:scale-110
+                          "
               />
             </li>
           ))}
