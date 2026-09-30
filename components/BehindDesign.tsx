@@ -8,7 +8,7 @@ const DESIGN_EXAMPLES = [Agents_Saas, Barber_Saas, Ecommerce];
 export default function BehindDesign() {
   return (
     <section className="w-full max-w-7xl mx-auto p-5 grid lg:grid-cols-2 mt-10 justify-between gap-10 lg:gap-30">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 col-span-2 md:col-span-1">
         <span className="text-primary font-medium text-base">
           Por trás do design
         </span>
@@ -16,8 +16,8 @@ export default function BehindDesign() {
           Criando experiências que simplificam a vida
         </h3>
       </div>
-      <div className="grid gap-10">
-        <h3 className="text-2xl lg:text-3xl text-white font-medium leading-8 md:leading-10">
+      <div className="grid gap-5 md:gap-10">
+        <h3 className="text-xl md:text-2xl lg:text-3xl text-white font-medium leading-8 md:leading-10">
           Desenvolvemos produtos focados em interfaces limpas e intuitivas que
           resolvem problemas do mundo real.
         </h3>
@@ -29,14 +29,15 @@ export default function BehindDesign() {
         </div>
       </div>
       <div className="col-span-2">
-        <ul className="flex items-center gap-5 justify-between">
+        <ul className="grid md:grid-cols-3 lg:flex-row items-center gap-5 justify-between">
           {DESIGN_EXAMPLES.map((img) => (
             <li key={img.src} className="overflow-hidden rounded-4xl">
               <Image
                 src={img}
                 alt="Projetos Celf Studio"
-                height={450}
-                className="rounded-4xl grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110 overflow-hidden"
+                height={300}
+                width={1000}
+                className="rounded-4xl w-full grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110 overflow-hidden"
               />
             </li>
           ))}
