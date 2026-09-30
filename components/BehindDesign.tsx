@@ -1,8 +1,13 @@
 import ButtonCta from './ButtonCta';
+import Agents_Saas from '../public/agents-ai.jpg';
+import Barber_Saas from '../public/barber-saas.jpg';
+import Ecommerce from '../public/ecommerce.jpg';
+import Image from 'next/image';
+const DESIGN_EXAMPLES = [Agents_Saas, Barber_Saas, Ecommerce];
 
 export default function BehindDesign() {
   return (
-    <section className="w-full max-w-7xl mx-auto p-5 grid lg:grid-cols-2 mt-10 justify-between gap-10 lg:gap-50">
+    <section className="w-full max-w-7xl mx-auto p-5 grid lg:grid-cols-2 mt-10 justify-between gap-10 lg:gap-30">
       <div className="flex flex-col gap-4">
         <span className="text-primary font-medium text-base">
           Por trás do design
@@ -22,6 +27,20 @@ export default function BehindDesign() {
           </p>
           <ButtonCta href="/contato" />
         </div>
+      </div>
+      <div className="col-span-2">
+        <ul className="flex items-center gap-5 justify-between">
+          {DESIGN_EXAMPLES.map((img) => (
+            <li key={img.src} className="overflow-hidden rounded-4xl">
+              <Image
+                src={img}
+                alt="Projetos Celf Studio"
+                height={450}
+                className="rounded-4xl grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110 overflow-hidden"
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
