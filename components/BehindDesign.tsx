@@ -38,7 +38,8 @@ export default function BehindDesign() {
                 height={300}
                 width={1000}
                 className="w-full rounded-4xl
-                            grayscale
+                            grayscale-0
+                            md:grayscale
                             transition-all
                             duration-500
                             [@media(hover:hover)]:hover:grayscale-0
