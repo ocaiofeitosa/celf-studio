@@ -7,7 +7,7 @@ const DESIGN_EXAMPLES = [Agents_Saas, Barber_Saas, Ecommerce];
 
 export default function BehindDesign() {
   return (
-    <section className="w-full max-w-7xl mx-auto p-5 grid lg:grid-cols-2 mt-10 justify-between gap-10 lg:gap-30">
+    <section className="w-full max-w-7xl mx-auto p-5 m-20 grid lg:grid-cols-2 mt-10 justify-between gap-10 lg:gap-30">
       <div className="flex flex-col gap-4 col-span-2 md:col-span-1">
         <span className="text-primary font-medium text-base">
           Por trás do design
@@ -35,9 +35,10 @@ export default function BehindDesign() {
               <Image
                 src={img}
                 alt="Projetos Celf Studio"
-                height={300}
-                width={1000}
-                className="w-full rounded-4xl
+                height={400}
+                width={500}
+                className="rounded-4xl
+                            max-h-[400]
                             grayscale-0
                             md:grayscale
                             transition-all

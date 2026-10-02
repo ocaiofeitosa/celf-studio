@@ -34,7 +34,7 @@ export default function Header() {
               );
             })}
           </ul>
-          <ButtonCta href="/contato" variant="white" />
+          <ButtonCta href="/contato" variant="black" />
         </div>
         <MenuIcon color="white" className="flex md:hidden" size={28} />
       </div>

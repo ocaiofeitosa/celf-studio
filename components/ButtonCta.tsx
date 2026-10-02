@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 interface ButtonCtaProps extends LinkProps {
   children?: React.ReactNode;
-  variant?: 'primary' | 'white';
+  variant?: 'primary' | 'white' | 'black';
 }
 
 const variants = {
@@ -13,6 +13,10 @@ const variants = {
   },
   white: {
     button: 'bg-white text-primary hover:bg-primary hover:text-white',
+    icon: 'bg-primary text-white group-hover:bg-white group-hover:text-primary',
+  },
+  black: {
+    button: 'bg-white text-secondary hover:bg-primary hover:text-white',
     icon: 'bg-primary text-white group-hover:bg-white group-hover:text-primary',
   },
 };

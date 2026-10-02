@@ -4,8 +4,7 @@ import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Celf Studio | Web Agency',
-  description:
-    'Portfolio demo using SF Pro typography and a custom design palette.',
+  description: 'Portfolio Celf Studio.',
 };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
